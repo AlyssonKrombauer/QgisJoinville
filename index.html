@@ -49,42 +49,6 @@ var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
 map.on('click', 'lyr_Mesclado_1_0', function (e) {
     var description = '<table>\
                     <tr>\
-                        <td colspan="2">' + (e.features[0].properties['fid'] !== null ? autolinker.link(e.features[0].properties['fid'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (e.features[0].properties['Name'] !== null ? autolinker.link(e.features[0].properties['Name'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (e.features[0].properties['description'] !== null ? autolinker.link(e.features[0].properties['description'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (e.features[0].properties['timestamp'] !== null ? autolinker.link(e.features[0].properties['timestamp'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (e.features[0].properties['begin'] !== null ? autolinker.link(e.features[0].properties['begin'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (e.features[0].properties['end'] !== null ? autolinker.link(e.features[0].properties['end'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (e.features[0].properties['altitudeMode'] !== null ? autolinker.link(e.features[0].properties['altitudeMode'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (e.features[0].properties['tessellate'] !== null ? autolinker.link(e.features[0].properties['tessellate'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (e.features[0].properties['extrude'] !== null ? autolinker.link(e.features[0].properties['extrude'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (e.features[0].properties['visibility'] !== null ? autolinker.link(e.features[0].properties['visibility'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (e.features[0].properties['drawOrder'] !== null ? autolinker.link(e.features[0].properties['drawOrder'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (e.features[0].properties['icon'] !== null ? autolinker.link(e.features[0].properties['icon'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <th scope="row">MACROSETOR</th>\
                         <td>' + (e.features[0].properties['MACROSETOR'] !== null ? autolinker.link(e.features[0].properties['MACROSETOR'].toLocaleString()) : '') + '</td>\
                     </tr>\
@@ -99,12 +63,6 @@ map.on('click', 'lyr_Mesclado_1_0', function (e) {
                     <tr>\
                         <th scope="row">Frequencia</th>\
                         <td>' + (e.features[0].properties['Frequencia'] !== null ? autolinker.link(e.features[0].properties['Frequencia'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (e.features[0].properties['layer'] !== null ? autolinker.link(e.features[0].properties['layer'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (e.features[0].properties['path'] !== null ? autolinker.link(e.features[0].properties['path'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>'
 
