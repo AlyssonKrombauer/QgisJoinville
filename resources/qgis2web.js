@@ -110,20 +110,7 @@ layerSwitcher.hidePanel = function() {};
 layerSwitcher.showPanel();
 
 
-    var searchLayer = new SearchLayer({
-      layer: lyr_DomiciliarTurnosJoinville_1,
-      colName: 'SETOR',
-      zoom: 10,
-      collapsed: true,
-      map: map
-    });
-
-    map.addControl(searchLayer);
-    document.getElementsByClassName('search-layer')[0]
-    .getElementsByTagName('button')[0].className +=
-    ' fa fa-binoculars';
-    
-map.getView().fit([-5439035.222615, -3041122.658049, -5433999.134368, -3038380.511111], map.getSize());
+map.getView().fit([-5441951.671742, -3042103.107862, -5431879.495249, -3036618.813986], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
